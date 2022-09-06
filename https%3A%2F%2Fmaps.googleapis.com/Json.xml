@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Json" path="/maps/api/geocode/json" id="63f3881d-17f6-457e-a8fa-d5f70e556029" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="63f3881d-17f6-457e-a8fa-d5f70e556029fileName">Json</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Json" id="ffe2cee5-1355-49a7-ac58-4290a51782a9" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>address</con:name>
+        <con:value>Boston</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>Boston</con:default>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>key</con:name>
+        <con:value>AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0</con:default>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=UTF-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:json="https://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="0e1fb166-de9b-4548-b7bd-3771c69424ad" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://maps.googleapis.com</con:endpoint>
+      <con:parameters>
+        <con:entry key="address" value="Boston"/>
+        <con:entry key="key" value="AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>address</con:entry>
+        <con:entry>key</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="80e94653-990e-4efe-9a83-0b04ba6389b6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0881db69-d603-41e8-adc4-55cccb033d4c">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="80e94653-990e-4efe-9a83-0b04ba6389b6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0881db69-d603-41e8-adc4-55cccb033d4c">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="80e94653-990e-4efe-9a83-0b04ba6389b6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0881db69-d603-41e8-adc4-55cccb033d4c">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>
