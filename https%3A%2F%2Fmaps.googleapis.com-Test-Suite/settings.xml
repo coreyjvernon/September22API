@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="09530b83-75cd-46c0-a96e-f62440c4368a" name="https://maps.googleapis.com Test Suite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="09530b83-75cd-46c0-a96e-f62440c4368afileName">https%3A%2F%2Fmaps.googleapis.com-Test-Suite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>
