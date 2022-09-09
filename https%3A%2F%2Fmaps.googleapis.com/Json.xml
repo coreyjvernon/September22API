@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Json" path="/maps/api/geocode/{type}" id="97371f49-20f1-46d9-8ceb-1f10f5090341" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="97371f49-20f1-46d9-8ceb-1f10f5090341fileName">Json</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>type</con:name>
+      <con:value>json</con:value>
+      <con:style>TEMPLATE</con:style>
+      <con:default>json</con:default>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Json" id="7d359d74-c057-4eaf-920e-99c890200344" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>address</con:name>
+        <con:value>Boston</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>Boston</con:default>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>key</con:name>
+        <con:value>AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0</con:default>
+        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=UTF-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:json="https://maps.googleapis.com/maps/api/geocode/json">json:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="ce351398-e650-40df-ad0e-ce024026b4a3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://maps.googleapis.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="address" value="Boston"/>
+        <con:entry key="key" value="AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>address</con:entry>
+        <con:entry>key</con:entry>
+        <con:entry>type</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
